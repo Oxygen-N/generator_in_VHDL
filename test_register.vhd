@@ -26,7 +26,7 @@ begin
     stimulus : process is
     begin
         reset <= '1'; wait for Tpc/2;
-        reset <= '0'; wait for Tpc/2;
+        reset <= '0'; wait;
         d <= x"000000";
         wait for Tpc/2;
         --Start testing

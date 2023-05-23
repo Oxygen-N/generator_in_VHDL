@@ -24,6 +24,6 @@ begin
     stimulus : process is
     begin
         reset <= '1'; wait for Tpc/2;
-        reset <= '0'; wait for Tpc/2;
+        reset <= '0'; wait;
     end process stimulus;
 end test_tone_arch;
